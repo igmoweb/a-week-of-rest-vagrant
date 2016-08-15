@@ -7,10 +7,15 @@ AWoR Vagrant is based on
 * [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
 * [SuviveJS Webpack book](http://survivejs.com/webpack/)
 
-AWoR Vagrant includes only onw WordPress instalation (http://local.wordpress.dev) and a JS application (http://awor.dev:8080) located at `/vagrant/www/front`
+AWoR Vagrant includes:
+- A WordPress installation (http://local.wordpress.dev) with REST API v2 + Oauth + Oauth broker plugins activated
+- A development environment with Webpack, React and Babel (http://awor.dev:8080) located at `/vagrant/www/front`
 
 ##### Note
 `vvv.dev` address is now located at `awor.dev`
+
+##### Another note
+React and Babel are not fully integrated yet but I'm on the way!
 
 ## How does AWoR Vagrant work
 1. Check [VVV Instructions](https://github.com/Varying-Vagrant-Vagrants/VVV#how-to-use-varying-vagrant-vagrants) to start the virtual machine
