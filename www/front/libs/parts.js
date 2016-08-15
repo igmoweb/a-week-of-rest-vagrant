@@ -5,6 +5,12 @@ const PurifyCSSPlugin = require('purifycss-webpack-plugin');
 
 exports.devServer = function(options) {
   return {
+    watchOptions: {
+      // Delay the rebuild after the first change
+      aggregateTimeout: 300,
+      // Poll using interval (in ms, accepts boolean too)
+      poll: 1000
+    },
     devServer: {
       // Enable history API fallback so HTML5 History API based
       // routing works. This is a good default that will come
